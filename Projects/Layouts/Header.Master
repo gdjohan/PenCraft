@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header.master.cs" Inherits="Projects.Layouts.Header" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="Btn_Home" runat="server" Text="Home" OnClick="Btn_Home_Click" />
+            <asp:Button ID="Btn_Login" runat="server" Text="Login" OnClick="Btn_Login_Click" />
+            <asp:Button ID="Btn_Register" runat="server" Text="Register" OnClick="Btn_Register_Click" />
+            <asp:Button ID="Btn_Cart" runat="server" Text="Cart" OnClick="Btn_Cart_Click" />
+            <asp:Button ID="Btn_Transaction" runat="server" Text="Transaction" OnClick="Btn_Transaction_Click" />
+            <asp:Button ID="Btn_UpdateProfile" runat="server" Text="Update Profile" OnClick="Btn_UpdateProfile_Click" />
+            <asp:Button ID="Btn_Logout" runat="server" Text="Logout" OnClick="Btn_Logout_Click" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
